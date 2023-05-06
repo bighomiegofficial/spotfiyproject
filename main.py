@@ -1,16 +1,17 @@
-# This is a sample Python script.
+from spotify_api import SpotifySong
 
-# Press Shift+F10 to execute it or replace it with your code.
-# Press Double Shift to search everywhere for classes, files, tool windows, actions, and settings.
+def get_data():
+    client_id = "45a9d1ebfcc34203bf0a849a317e486c"
+    client_secret = "48886900a84a458884c437a0aa26e328"
+    spotify_song = SpotifySong(client_id, client_secret)
+    song_names = ["Shape of You", "Blinding Lights", "Strike (Holster)"]
+    artist_names = ["Ed Sheeran", "The Weeknd", "Lil Yachty"]
+    song_data_df = spotify_song.get_song_data_batch(song_names, artist_names)
+
+    return song_data_df
 
 
-def print_hi(name):
-    # Use a breakpoint in the code line below to debug your script.
-    print(f'Hi, {name}')  # Press Ctrl+F8 to toggle the breakpoint.
-
-
-# Press the green button in the gutter to run the script.
 if __name__ == '__main__':
-    print_hi('PyCharm')
+    song_data = get_data()
+    song_data.to_csv('C:/Users/Admin/PycharmProjects/spotifyproject/data/song_data.csv')
 
-# See PyCharm help at https://www.jetbrains.com/help/pycharm/

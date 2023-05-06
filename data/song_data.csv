@@ -1,0 +1,4 @@
+,song_name,artist,song_id,num_streams,duration_ms,popularity,tempo,energy,danceability,instrumentalness,key,liveness,loudness,mode,speechiness,time_signature,valence
+0,Shape of You,Ed Sheeran,7qiZfU4dY1lWllzX7mPBI3,88,233712,88,95.977,0.652,0.825,0.0,1,0.0931,-3.183,0,0.0802,4,0.931
+1,Blinding Lights,The Weeknd,0VjIjW4GlUZAMYd2vXMi3b,92,200040,92,171.005,0.73,0.514,9.54e-05,1,0.0897,-5.934,1,0.0598,4,0.334
+2,Strike (Holster),Lil Yachty,7iTTWHbr4tAlsRJN4m4bay,79,148115,79,143.091,0.642,0.851,0.0,1,0.0713,-5.281,1,0.216,4,0.701
